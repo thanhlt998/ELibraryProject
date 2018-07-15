@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#">eLibrary</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Add Book</a></li>
+                        <li><a href="#">View Book</a></li>
+                        <li><a href="#">Issue Book</a></li>
+                        <li><a href="#">View Issued Book</a></li>
+                        <li><a href="#">Return Book</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="section-home section-librarian-home">
+            <div class="row home-box">
+                <h2>Add Book Form</h2>
+                <form action="#" method="post">
+                    <div class="col span-1-of-3">
+                        <div class="row">Callno</div>
+                        <div class="row"><label for="name">Name</label></div>
+                        <div class="row"><label for="author">Author</label></div>
+                        <div class="row"><label for="publisher">Publisher</label></div>
+                        <div class="row"><label for="quantity">Quantity</label></div>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <div class="row line-row">Callno</div>
+                        <div class="row"><input type="text" name="name" id="name" placeholder="Name" required="required"></div>
+                        <div class="row"><input type="text" name="author" id="author" placeholder="Author" required="required"></div>
+                        <div class="row"><input type="text" name="publisher" id="publisher" placeholder="Publisher" required="required"></div>
+                        <div class="row"><input type="text" name="quantity" id="quantity" placeholder="Quantity" required="required"></div>
+                    </div>
+                    <div class="row button-row"><div class="row"><button type="submit" class="btn">Save Changes Book</button></div></div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

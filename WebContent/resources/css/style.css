@@ -1,0 +1,252 @@
+/*----------------------------------------*/
+/*Global Setup*/
+/*----------------------------------------*/
+html {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #555;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom:1}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*----------------------------------------*/
+/*Links*/
+/*----------------------------------------*/
+
+a:link,
+a:visited{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #e67e22;
+}
+
+/*----------------------------------------*/
+/*Navigation*/
+/*----------------------------------------*/
+
+header nav .row {
+    background-color: #555;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header nav .main-nav {
+    list-style: none;
+    margin: 10px auto;
+}
+
+header nav .main-nav li{
+    float: left;
+    margin-right: 30px;
+}
+
+/*
+header nav .main-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+*/
+
+/*----------------------------------------*/
+/*Buttons*/
+/*----------------------------------------*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ff8c26;
+}
+
+.button-row {
+    text-align: center;
+}
+
+/*----------------------------------------*/
+/*Heading*/
+/*----------------------------------------*/
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/*----------------------------------------*/
+/*Login Forms*/
+/*----------------------------------------*/
+
+.section-form .row .col .form-box {
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-form .row .col .form-box form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.section-form .row .col .form-box form input[type=email],
+.section-form .row .col .form-box form input[type=password] {
+    width: 100%;
+    height: 30px;
+}
+
+.section-form .row .col .form-box form .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------------------------------------*/
+/*Home*/
+/*----------------------------------------*/
+
+.section-admin-home {
+    background-image: linear-gradient(rgba(54, 54, 54, 0.3), rgba(54, 54, 54, 0.3)), url(images/admin1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.section-librarian-home {
+    background-image: linear-gradient(rgba(54, 54, 54, 0.3), rgba(54, 54, 54, 0.3)), url(images/library1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.section-home .home-box {
+    background-color: #fff;
+    width: 50%;
+    padding: 50px;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(40%, 20%);
+}
+
+.section-home form {
+    line-height: 40px;
+}
+
+.section-home form input[type=text],
+.section-home form input[type=email],
+.section-home form input[type=password] {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #555;
+}
+
+.section-home .home-box .span-2-of-3 {
+    text-align: center;
+}
+
+.section-home .home-box .line-row {
+    padding-left: 10%;
+    text-align: left;
+}
+
+/*----------------------------------------*/
+/*Section views*/
+/*----------------------------------------*/
+
+.section-view {
+    
+}
+
+.section-view .row {
+    padding: 30px;
+}
+
+.section-view .row table {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.section-view .row table th,
+.section-view .row table td {
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    padding: 10px;
+}
+
+.section-view .row table th:last-child,
+.section-view .row table td:last-child {
+    border-right: 0;
+}
+
+.section-view a:link,
+.section-view a:visited{
+    color: #555;
+}
+
+.section-view a:hover,
+.section-view a:active {
+    color: #e67e22;
+}
+
+/*----------------------------------------*/
+/*Footer*/
+/*----------------------------------------*/
+
+footer .row {
+    background-color: #555;
+    color: #fff;
+    font-size: 70%;
+    text-align: center;
+    border-radius: 5px;
+}
