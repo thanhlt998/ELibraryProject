@@ -25,7 +25,7 @@ public class ApplicationListener implements ServletContextListener {
 			connection.close();
 			System.out.println("Close connection successfully!!!");
 		} catch (SQLException e) {
-			System.out.println("Failed to close connection, there are something wrong here!!!);
+			System.out.println("Failed to close connection, there are something wrong here!!!");
 			e.printStackTrace();
 		}
 	}

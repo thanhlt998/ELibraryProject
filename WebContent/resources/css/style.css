@@ -129,6 +129,10 @@ h2:after {
 /*Login Forms*/
 /*----------------------------------------*/
 
+.section-form {
+	height: 100vh;
+}
+
 .section-form .row .col .form-box {
     line-height: 40px;
     width: 80%;
@@ -140,6 +144,7 @@ h2:after {
     width: 60%;
 }
 
+.section-form .row .col .form-box form input[type=text],
 .section-form .row .col .form-box form input[type=email],
 .section-form .row .col .form-box form input[type=password] {
     width: 100%;
@@ -176,7 +181,7 @@ h2:after {
     margin: auto;
     border-radius: 10px;
     position: absolute;
-    transform: translate(40%, 20%);
+    transform: translate(40%, 10%);
 }
 
 .section-home form {
@@ -237,6 +242,10 @@ h2:after {
 .section-view a:hover,
 .section-view a:active {
     color: #e67e22;
+}
+
+.message {
+	text-align: center;
 }
 
 /*----------------------------------------*/

@@ -44,7 +44,7 @@ public class LibrarianDao {
 		return rowsAffected != 0;
 	}
 	
-	public static boolean deleteLibrarianByIDList(int[] id, Connection connection) {
+	public static boolean deleteLibrarianByIDList(String[] id, Connection connection) {
 		int rowsAffected = 0;
 		StringBuffer sql = new StringBuffer("delete from e_librarian where id in (");
 		
@@ -65,16 +65,15 @@ public class LibrarianDao {
 	}
 	
 	public static boolean updateLibrarian(Librarian librarian, Connection connection) {
-		String sql = "update e_librarian set name = ?, username = ?, password = ?, email = ?, mobile = ? where id = ?";
+		String sql = "update e_librarian set name = ?, password = ?, email = ?, mobile = ? where username = ?";
 		int rowsAffected = 0;
 		try {
 			PreparedStatement statement = connection.prepareStatement(sql);
 			statement.setString(1, librarian.getName());
-			statement.setString(2, librarian.getUsername());
-			statement.setString(3, librarian.getPassword());
-			statement.setString(4, librarian.getEmail());
-			statement.setString(5, librarian.getMobile());
-			statement.setInt(6, librarian.getId());
+			statement.setString(2, librarian.getPassword());
+			statement.setString(3, librarian.getEmail());
+			statement.setString(4, librarian.getMobile());
+			statement.setString(5, librarian.getUsername());
 			
 			rowsAffected = statement.executeUpdate();
 		} catch (SQLException e) {
@@ -140,7 +139,7 @@ public class LibrarianDao {
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery(sql);
 			if(resultSet.next()) {
-				maxId = resultSet.getInt("maxId");
+				maxId = resultSet.getInt("maxId") + 1;
 			}
 		} catch (SQLException e) {
 			System.out.println("There are something wrong while generating id.");
