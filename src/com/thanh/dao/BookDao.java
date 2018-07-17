@@ -140,7 +140,7 @@ public class BookDao {
 	
 	public static boolean checkIssued(String callNo, Connection connection) {
 		boolean status = false;
-		String sql = "select * from e_book where callNo = " + callNo + " and quantity > issued";
+		String sql = "select * from e_book where callNo = '" + callNo + "' and quantity > issued";
 		try {
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery(sql);

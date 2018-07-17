@@ -27,7 +27,7 @@ public class Book {
 		this.author = resultSet.getString("author");
 		this.publisher = resultSet.getString("publisher");
 		this.quantity = resultSet.getInt("quantity");
-		this.issuedBook = resultSet.getInt("issuedBook");
+		this.issuedBook = resultSet.getInt("issued");
 	}
 
 	public String getCallNo() {

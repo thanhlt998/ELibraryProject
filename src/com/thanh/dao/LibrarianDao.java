@@ -117,7 +117,7 @@ public class LibrarianDao {
 	}
 	
 	public static boolean authenticateLibrarian(String username, String password, Connection connection) {
-		String sql = "select * from e_librarian where name = '" + username + "', password = '" + password + "'";
+		String sql = "select * from e_librarian where username = '" + username + "' and password = '" + password + "'";
 		boolean flag = false;
 		try {
 			Statement statement = connection.createStatement();

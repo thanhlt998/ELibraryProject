@@ -156,6 +156,20 @@ h2:after {
     margin-right: auto;
 }
 
+.section-login-form .form-box {
+    line-height: 40px;
+    width: 40%;
+    padding: 0;
+    margin: auto;
+}
+
+.section-login-form .form-box form input[type=email],
+.section-login-form .form-box form input[type=password],
+.section-login-form .form-box form input[type=text] {
+    width: 100%;
+    height: 30px;
+}
+
 /*----------------------------------------*/
 /*Home*/
 /*----------------------------------------*/

@@ -49,7 +49,7 @@ public class IssuedBookDao {
 	}
 
 	public static boolean returnBook(String callNo, String studentId, Connection connection) {
-		String sql = "update e_issuebook set returnStatus = 'yes' where callNo = '" + callNo + "' and studentId = '" + studentId + "'";
+		String sql = "update e_issuebook set returnStatus = 'Yes' where callNo = '" + callNo + "' and studentId = '" + studentId + "'";
 		int rowsAffected = 0;
 		try {
 			Statement statement = connection.createStatement();
